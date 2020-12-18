@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'portfolio/css/index.css' %}">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP</title>
+    
+</head>
+<body onscroll="changeOpacity()">
+    <div class="grid">
+        
+        {% if artwork_list %}
+        <div class="header">
+            <!-- <h1>{{artwork_list.0.name}}</h1> -->
+            <img class="main-header center-1-main-header" src="{% static 'portfolio/kevon_website/img1.png' %}" alt="{{ artwork_list.0.pictureUrl}} ">
+        </div>
+        {%endif%}
+        <div id="my_navbar-div" class="nav fixed-top navbar text-center navbar-expand-md  bg-dark navbar-dark">
+            <nav id="my_navbar" class="navbar fixed-top text-center navbar-expand-md  bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">KEVON SPENCER</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>   
+        </div>
+        <div class="content-body">
+            <p>I’m Kevon Spencer, a young emerging artist with an eye for detail and a love for charcoal. What inspire me to draw are
+            the thrill, the satisfaction of creating something from nothing; turning a blank paper into a masterpiece by the strokes
+            of my hand, and the challenge of capturing every detail to make the drawing look as realistic as possible. It’s an
+            exhilarating and amazing feeling.
+            What inspires my work is the need to send a message or for the aesthetic, to portray an idea or thought in a creative
+            way. I do this through social commentary and realism. Most of my works are mainly inspired by numerous Nigerian artists
+            who also explore those themes such as Arinze and Ken Nwadiogbu.
+            </p>
+        </div>
+        <div class="content-1">
+            <div class="content-1-body">
+                <h2 class="my-content-1-header">S. O. S. 2018</h2>
+                <p>Medusa, 2020, charcoal and graphite on paper. I started this around April but stopped after some weeks because I didn't
+                know what I wanted the finish to look like but here it is😅 most of this is completely off the dome so that's another
+                reason why it took so long.</p>
+            </div>
+            <div class="content-1-img">
+                <img class="center-2" src="{% static 'portfolio/kevon_website/img2.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="content-2">
+            <div class="content-2-img">
+                <img class="center-2" src="{% static 'portfolio/kevon_website/img3.jpg' %}" alt="">
+            </div>
+            <div class="content-2-body">
+                <h2 class="my-content-2-header">Tainted</h2>
+                <p>With every interaction a bit of the person is left with us.
+                That weight,
+                That pressure,
+                It pushes you into the darkness;
+                The darkness of your mind.
+                Unable to see your way out.
+                Losing your identity.
+                Losing yourself in yourself.
+                To the point of no return,
+                To the point of insanity.</p>
+            </div>
+        </div>
+        <div class="content-3">
+            <div class="content-3-img">
+                <img class="img2 center-2" src="{% static 'portfolio/kevon_website/img4.jpg' %}" alt="">
+            </div>
+            <div class="content-2-img">
+                <img class="center-2" src="{% static 'portfolio/kevon_website/img5.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="content-4">
+            <div class="content-4-img">
+                <img class="center-2" src="{% static 'portfolio/kevon_website/img6.jpg' %}" alt="">
+            </div>
+            <div class="content-4-img">
+                <img class="center-2" src="" alt="">
+            </div>
+            <div class="content-4-img">
+                <img class="center-2" src="{% static 'portfolio/kevon_website/img7.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <ol>Artist: Kevon Spencer</ol>
+                <ol>Email: kevonspencer@gmail.com</ol>
+                <ol>Website created by: <a href="http://joshjwelsh.com">Joshua Welsh</a></ol>
+            </ul>
+        </div>
+    </div>
+
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="{% static 'portfolio/js/index.js' %}"></script>
+            
+</html>
+        <!-- <div class="content">
+            
+            <div class="content-1-img">
+                <img class="center-2" src="{% static 'portfolio/kevon_website/img2.jpg' %}" alt="">
+            </div>
+            <div class="my-content-2">
+                
+            </div>
+            <div class="my-content-3">
+               
+            </div>
+
+            <div class="my-content-4">
+                <div class="content-4-body">
+                    
+                </div>
+            </div>
+
+        </div> -->
+       
