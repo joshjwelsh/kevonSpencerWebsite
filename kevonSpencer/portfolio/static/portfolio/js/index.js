@@ -13,9 +13,7 @@
 
 function changeOpacity(){
   let uh = $(this).scrollTop();
-  console.log('Uh ', uh);
   let screen = uh/ 500; 
-  console.log('screen', screen);
   if(screen == 0){
          document.getElementById("my_navbar-div").style.opacity = 0.001;
       document.getElementById("my_navbar").style.opacity = 0.001;

@@ -5,59 +5,10 @@ html, body {
 font-family: 'Noto Sans JP', sans-serif;
 }
 
+
+
 .header{
     grid-area: header;
-
-}
-
-p{
-    font-size: 20px;
-    line-height: 2.5em;
-}
-
-.content-body{
-    grid-area: content-body;
-    /* overflow-wrap: break-word; */
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.nav{
-    grid-area: nav;
-    opacity: 0.001;
-}
-
-.content-1{
-    grid-area: content-1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-     margin-top: 15em;
-    margin-bottom: 15em;
-}
-
-.content-2{
-    grid-area: content-2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 15em;
-    margin-bottom: 15em;
-}
-
-.content-3{
-    grid-area: content-3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 15em;
-  margin-bottom: 15em;
-}
-
-.content-4{
-    grid-area: content-4;        
-    grid-row: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 15em;
-    margin-bottom: 15em;
 }
 
 .footer{
@@ -81,6 +32,58 @@ p{
     ;
 }
 
+.content-body{
+    grid-area: content-body;
+    /* overflow-wrap: break-word; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav{
+    grid-area: nav;
+    opacity: 0.001;
+}
+
+.content-1{
+    grid-area: content-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15em;
+    margin-bottom: 15em;
+}
+
+.content-2{
+    grid-area: content-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15em;
+    margin-bottom: 15em;
+}
+
+.content-3{
+    grid-area: content-3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15em;
+margin-bottom: 15em;
+}
+
+.content-4{
+    grid-area: content-4;        
+    grid-row: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15em;
+    margin-bottom: 15em;
+}
+
+p{
+    font-size: 20px;
+    line-height: 2em;
+}
+
+
+
 .center-1-main-header{
   display: block;
   margin-left: auto;
@@ -97,6 +100,103 @@ p{
   min-width: auto;
   max-width: 90%;
 }
+
+
+ /* This is for  mobile viewing */
+@media screen and (max-width: 768px){
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+
+    p{
+        font-size: 20px;
+        line-height: 2em;
+    }
+
+
+    .header{
+        grid-area: header;
+    }
+
+    .content-body{
+        grid-area: content-body;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .nav{
+        grid-area: nav;
+        opacity: 0.001;
+    }
+
+    .content-1{
+        grid-area: content-1;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 15em;
+        margin-bottom: 15em;
+    }
+
+    .content-2{
+        grid-area: content-2;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 15em;
+        margin-bottom: 15em;
+    }
+
+    .content-3{
+        grid-area: content-3;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 15em;
+    margin-bottom: 15em;
+    }
+
+    .content-4{
+        grid-area: content-4;        
+        grid-row: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 15em;
+        margin-bottom: 15em;
+    }
+
+    .footer{
+        grid-area: footer;
+        background: lightgrey;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 1fr 100px 2fr 2fr 2fr 2fr 2fr auto;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        ". content-body ."
+        ". content-1 ."
+        ". content-2 ."
+        ". content-3 ."
+        ". content-4 ."
+        "footer footer footer"  
+        ;
+    }
+
+    .main-header{
+        width:100%;
+        height:550px;
+        object-fit:cover;
+        object-position:50% 50%;
+    }
+}
+
+/*desktop development */
+
 
 /* 
 .content-1-body{
